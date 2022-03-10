@@ -1,0 +1,52 @@
+logging="INFO"
+data-path="/home/ubuntu/data"
+host-whitelist=["*"]
+
+# rpc
+rpc-http-enabled=true
+rpc-http-host="0.0.0.0"
+rpc-http-port=8545
+rpc-http-cors-origins=["*"]
+
+# ws
+rpc-ws-enabled=true
+rpc-ws-host="0.0.0.0"
+rpc-ws-port=8546
+
+# graphql
+graphql-http-enabled=true
+graphql-http-host="0.0.0.0"
+graphql-http-port=8547
+graphql-http-cors-origins=["*"]
+
+# metrics
+metrics-enabled=true
+metrics-host="0.0.0.0"
+metrics-port=9545
+
+# permissions
+#permissions-nodes-config-file-enabled=true
+#permissions-nodes-config-file="/home/ubuntu/data/permissions_config.toml"
+
+# bootnodes
+bootnodes=["enode://101e9c136880c1f74284750f7df2d0b733ba9c720b81c9f97203467de7c0b53feb96fe0efce6622f828e8e4b360fed53163747c33ac43f4ec98607c55b6af7e5@10.0.100.22:30303"]
+
+
+# Discovery at boot is set to a list of static files, but will also discover new nodes should they be added
+# static nodes
+#static-nodes-file="/home/ubuntu/data/static-nodes.json"
+discovery-enabled=true
+
+# minimum gas fee
+min-gas-price=23809523809524
+
+# eth gas api config
+api-gas-price-blocks=0
+
+# rpc api
+rpc-http-api=["ETH","NET","WEB3","ADMIN","TRACE","CLIQUE","TXPOOL","PERM"]
+rpc-ws-api=["ETH","NET","WEB3","ADMIN","TRACE","CLIQUE","TXPOOL","PERM"]
+
+p2p-host="10.0.100.22"
+
+genesis-file="/home/ubuntu/data/genesis.json"
